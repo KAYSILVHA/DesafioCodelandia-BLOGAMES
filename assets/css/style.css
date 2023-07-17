@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+
+header nav{
+  width: 12vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+header div{
+  width: 12vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-mobile{
+  display: none;
+}
+
+@media (max-width: 500px){
+  header nav,
+  header div{
+    display: none;
+  }
+
+
+  .nav-mobile{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+}
